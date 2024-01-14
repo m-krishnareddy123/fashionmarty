@@ -1,0 +1,140 @@
+.header{
+    background-color:rgb(91, 97, 113);
+    color:white;
+    padding-top:10px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom:20px;
+    font-family:Arial;
+    border-radius: 8px;
+    height:150px;
+    text-align:center;
+    
+}
+.space{
+    margin-top:50px;
+    color:white;
+}
+.search{
+    width:50px;
+}
+.slider-img{
+    width:100%;
+}
+.slideshow{
+    max-width:1000%;
+    position:relative;
+    margin:auto;
+
+}
+.prev,.next{
+    cursor:pointer;
+    position:absolute;
+    top:40%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color:rgb(88, 88, 88);
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6 ease;
+    border-radius:0 3px 3px 0;
+    user-select:none;
+}
+.next{
+    right:0;
+    border-radius:3px 0 0 3px;
+}
+.prev:hover,.next:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.number-text{
+    color:#f2f2f2;
+    font-size:15px;
+    padding:8px 12px;
+    position:absolute;
+    top:5px;
+}
+.item-design{
+    border:solid;
+    border-color:#2d545e;
+    border-width:2px;
+    display:inline-block;
+    margin-right:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    border-radius:20px;
+    box-shadow:5px 10px #c89666;
+}
+.item-img{
+    width:325px;
+    height:325px;
+    border-radius:20px;
+}
+.item-title{
+    font-family:Arial;
+    margin-top:0px;
+    margin-bottom:2px;
+    color:#2d545e;
+}
+.body{
+    text-align:center;
+}
+.div{
+    border:solid;
+    display:inline-block;
+    border-color:rgb(192, 192, 192);
+    padding:10px;
+}
+.login{
+    font-size:30px;
+    font-family:Arial;
+    color:rgb(74, 74, 74);
+    margin-bottom:20px;
+}
+.email{
+    font-size:15px;
+    font-family:Arial;
+}
+.e-a{
+    padding-right:120px;
+    padding-top:10px;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+.password{
+    font-size:15px;
+    font-family:Arial;
+    margin-right:108px;
+    
+}
+.p-a{
+    font-size:15px;
+    font-family:Arial;
+    color:blue; 
+}
+.button-a{
+    background-color:blue;
+    color:white;
+    border-width:1px;
+    padding-left:131px;
+    padding-right:131px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:4px;
+    margin-bottom:16px;
+}
+.button-b{
+    background-color:rgb(220, 220, 220);
+    color:black;
+    border-width:1px;
+    padding-left:77px;
+    padding-right:77px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius:4px;
+}
+.input{
+    margin-bottom:16px;
+}
+

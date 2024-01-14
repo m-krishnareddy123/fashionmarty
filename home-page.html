@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Major Project
+        </title>
+        <link rel="stylesheet" href="stylesheets.css">
+    </head>
+    <body style="background-color:#e1b382;">
+        <header class="header" >
+            <div style="display:block;">
+                <a style="font-size:28px;">
+                    <img style="width:90px;
+                                border-radius:50px;" src="website.jpg/logo.jpg">
+                    <p style="margin-top:0px;"> Fashion Mart</p>      
+                    </a>
+            </div>
+            
+             
+                
+                    <a class="space">
+                        <input type="search" placeholder="search products" style="width:250px; height:30px; border-radius:15px;" >
+                    </a>
+                    <a class="space" href="home-page.html" >HOME</a>
+                    <a class="space" href="CONTACT US.html">CONTACT US</a>
+                    <a class="space" href="aboutus.html">ABOUT US</a>
+                    <a class="space" href="login-page.html">Login</a>
+                
+
+            
+
+        </header>
+        <main>
+            <section>
+                <div class="slideshow">
+                    <div class="number-text">
+                        1/4
+                    </div>
+                    <img class="slider-img" src="website.jpg/slider-img-01.jpg">
+                </div>
+                <div class="slideshow">
+                    <div class="number-text">
+                        2/4
+                    </div>
+                    <img class="slider-img" src="website.jpg/slider-img-02.jpg">
+                </div>
+                <div class="slideshow">
+                    <div class="number-text">
+                        3/4
+                    </div>
+                    <img class="slider-img" src="website.jpg/slider-img-03.jpg">
+                </div>
+                <div class="slideshow">
+                    <div class="number-text">
+                        4/4
+                    </div>
+                    <img class="slider-img" src="website.jpg/slider-img-04.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    function currentSlide(n) { 
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("slideshow");
+                        if (n > slides.length) {slideIndex = 1}    
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                        }
+                        slides[slideIndex-1].style.display = "block";  dots[slideIndex-1].className += " active";
+                    }
+
+                </script>
+            </section>
+            <section>
+                <div style="
+                            display:grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            cursor:pointer;">
+                    <div class="item-design">
+                        <a  href="Women's Fashion.html">
+                            <img class="item-img" src="website.jpg/item-img-1.jpg">
+                        <p class="item-title">Women's Fasion</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a  href="mensfashion.html">
+                            <img class="item-img" src="website.jpg/item-img-2.jpg">
+                            <p class="item-title">Men's Fasion</p>
+                        </a>
+
+                    </div>
+                    <div class="item-design">
+                        <a  href="Kids Wear.html">
+                            <img class="item-img" src="website.jpg/item-img-3.jpg">
+                            <p class="item-title">Kids Wear</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a  href="Watchs.html">
+                            <img class="item-img" src="website.jpg/item-img-4.jpg">
+                            <p class="item-title">Watchs</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="Sheo.html">
+                        <img class="item-img" src="website.jpg/item-img-5.jpg">
+                        <p class="item-title">Shoes</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a  href="HandBag.html">
+                            <img class="item-img" src="website.jpg/item-img-6.jpg">
+                            <p class="item-title">Handbags</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="Mobile Accessories.html">
+                        <img class="item-img" src="website.jpg/item-img-7.jpg">
+                        <p class="item-title">Mobile Accessories</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="Home Applience.html">
+                        <img class="item-img" src="website.jpg/item-img-8.jpg">
+                        <p class="item-title">Home Appliences</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="Sports Wear.html">
+                            <img class="item-img" src="website.jpg/item-img-9.jpg">
+                            <p class="item-title">Sports Weare</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="Electronic Gadgets.html">
+                            <img class="item-img" src="website.jpg/item-img-10.jpg">
+                            <p class="item-title">Electrronic Gadgets</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="TrallyBag.html">
+                            <img class="item-img" src="website.jpg/item-img-11.jpg">
+                        <p class="item-title">Traly Bags</p>
+                        </a>
+                    </div>
+                    <div class="item-design">
+                        <a href="Groceries.html">
+                            <img class="item-img" src="website.jpg/item-img-12.jpg">
+                        <p class="item-title">Groceries</p>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+        
+        <div style="background-color:rgb(91, 97, 113);
+                    border-radius: 8px;
+                    color:white;
+                    text-align:center;">
+            <div>
+                <p style="font-family:Arial;
+                          font-size:25px;
+                          padding-top:20px;">
+                    Fashion Mart
+            </p>
+            </div>
+            <div style="margin-bottom:25px;">
+                <p>connect with us at</p>
+                <a>
+                    face book
+                </a>
+                <a>
+                    linked in
+                </a>
+                <a>
+                    youtube
+                </a>
+                <a>
+                    instagram
+                </a>
+                <a>
+                    twitter
+                </a>
+            </div>
+            <div style="display:grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        cursor:pointer;">
+                <div style="display:inline-block">
+                         <a>
+                            Products
+                        </a>
+                        <p>
+                            Sell your products
+                        </p>
+                        <p>
+                            Advertise
+                        </p>
+                        <p>
+                            Pricing
+                        </p>
+                        <p>
+                            Product Buisness
+                        </p>
+                    
+                </div>
+                <div style="display:inline-block">
+                    <a>
+                        Services
+                    </a>
+                    <p>
+                        Return
+                    </p>
+                    <p>
+                        Cash Back
+                    </p>
+                    <p>
+                        Affiliate Marketing
+                    </p>
+                    <p>
+                        Others
+                    </p>
+                </div>
+                <div style="display:inline-block">
+                    <a>
+                        Company
+                    </a>
+                    <p>
+                        Complaint
+                    </p>
+                    <p>
+                        Careers
+                    </p>
+                    <p>
+                        Support
+                    </p>
+                    <p>
+                        Others
+                    </p>
+                </div>
+                <div style="display:inline-block">
+                    <a>
+                        Get Help
+                    </a>
+                    <p>
+                        Help Center
+                    </p>
+                    <p>
+                        Privacy Policy
+                    </p>
+                    <p>
+                       Terms
+                    </p>
+                    <p>
+                        Login
+                    </p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        </body>
+</html>
